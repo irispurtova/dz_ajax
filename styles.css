@@ -1,0 +1,259 @@
+* {
+    margin: 0 auto;
+    padding: 0px;
+    font-family: 'gotham pro';
+}
+
+/* убрать полосу прокрутки */
+::-webkit-scrollbar {
+    width: 0;
+}
+
+@font-face {
+    font-family: 'gotham pro';
+    src: url('fonts/gothampro.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #f3f3f3;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#sortButton, #sortAreaButton {
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #454545;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.inner {
+    width: 62%;
+}
+
+.inner .inner-header {
+    padding: 10px 0px;
+}
+
+.inner .inner-header h1 {
+    color: #454545;
+    line-height: 1.85;
+    font-weight: 100;
+}
+
+#filterForm {
+    background-color: white;
+    width: 100%;
+}
+
+#filterForm h2 {
+    padding: 17px 0px 0px 30px;
+    color: #454545;
+}
+
+.inner .filter {
+    display: flex;
+    flex-direction: column;
+}
+
+.inner .filter .filter-blocks {
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+}
+
+.inner .filter .filter-blocks .filter-price {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.inner .filter .filter-blocks .filter-price .filter-price-header {
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #aab0c2;
+    font-weight: bold;
+}
+
+.inner .filter .filter-blocks .filter-price .filter-price-inputs {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+
+.inner .filter .filter-blocks .filter-square {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.inner .filter .filter-blocks .filter-square .filter-square-header {
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #aab0c2;
+    font-weight: bold;
+}
+
+.inner .filter .filter-blocks .filter-square .filter-square-inputs {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+
+.inner .filter .filter-buttons {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 20px;
+}
+
+.project {
+    height: 100%;
+    width: 545px;
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#resultContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.project .pic_text {
+    padding: 314px 20px 10px 20px;
+    display: flex;
+    align-items: baseline;
+}
+
+.button {
+    padding: 4px 10px;
+    border-radius: 5px;
+    background-color: #f3c368;
+}
+
+.project .text {
+    background-color: white;
+    color: black;
+    margin-bottom: 30px;
+}
+
+.project .text p {
+    padding: 10px;
+}
+
+input[type="text"] {
+    font-size: 20px;
+    width: 170px;
+}
+
+button[type="button"] {
+    font-size: 16px;
+    padding: 4px 10px;
+    background-color: #f3c368;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.sort {
+    display: flex;
+    flex-direction: row;
+    margin-right: 0px;
+}
+
+.sort #sortButton, #sortAreaButton {
+    margin-right: 15px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.modal-content p {
+    padding-bottom: 15px;
+}
+
+.modal-content button {
+    padding: 4px;
+    margin-right: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+#imagePreview {
+    margin-top: 10px;
+}
+
+#imagePreview img {
+    max-width: 100%;
+    max-height: 200px;
+    margin-top: 10px;
+}
+
+.tbl {
+    margin: 0px;
+}
+
+.tbl td {
+    padding: 5px 20px 5px 20px;
+}
+
+.tbl input[type="text"], input[type="number"] {
+    border: 1px solid;
+    width: 100%;
+    border-radius: 5px;
+    padding: 6px 4px;
+    font-size: 16px;
+}
+
+.tbl input[type="file"] {
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    font-size: 16px;
+    margin-left: 22px;
+    padding: 4px 4px;
+}
+
+#result, #result-del, #result-upd {
+    padding: 10px 0px 0px 20px;
+}
+
+#editModal {
+    display: none;
+    /* Другие стили для вашего модального окна */
+  }
